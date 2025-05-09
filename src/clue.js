@@ -86,12 +86,22 @@ const weaponsArray = [{name: 'rope', weight: 10},
 
 // ITERATION 2
 
-function selectRandom() {}
+function selectRandom(arr) {
+    return arr[Math.floor(Math.random() *arr.length)]
+}
 
-function pickMystery() {}
+function pickMystery() {
+    return {
+        suspect: selectRandom(suspectsArray),
+        weapon: selectRandom(weaponsArray),
+        room: selectRandom(roomsArray)
+    }
+}
 
 
 // ITERATION 3
 
-function revealMystery() {}
+function revealMystery(envelope) {
+    
+}
 
